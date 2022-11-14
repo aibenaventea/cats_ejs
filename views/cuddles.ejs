@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+    <title>Descripcion Gatos</title>
+</head>
+<body>
+    <header class="headerContainer">
+        <a class="title1" href="/">Raza de Gato</a>
+    </header>
+    <main class="mainContainer">
+        <section class="container">
+            <h2 class="title2"><%=detail.breed%></h2>
+            <img class="img" src="<%=detail.image%>" alt="cat_img">
+            <ul class="description">
+                <li class="properties">
+                    <h3 class="subtitle">Size</h3><br>
+                    <p class="text"><%=detail.size%></p><br>
+                </li>
+                <li class="properties">
+                    <h3 class="subtitle">Coat</h3><br>
+                    <p class="text"><%=detail.coat%></p><br>
+                </li>
+                <li class="properties">
+                    <h3 class="subtitle">Color</h3><br>
+                    <p class="text"><%=detail.color%></p><br>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

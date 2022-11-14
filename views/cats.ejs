@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+    <title>Lista Gatos</title>
+</head>
+<body>
+    <h1 class="title1">EJS Gatos</h1>
+        <% for(let i in cats) { %>
+            <a href="/cuddles?idx=<%=i%>"><img class="img" src="<%=cats[i].image%> " alt=""></a>
+        <% } %>
+</body>
+</html>

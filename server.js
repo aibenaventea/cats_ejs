@@ -41,6 +41,10 @@ let cats = [
 ]
 
 app.get('/', (request, response) => {
+    response.redirect('http://localhost:8000/cats')
+})
+
+app.get('/cats', (request, response) => {
     response.render('cats', {cats: cats})
 })
 
